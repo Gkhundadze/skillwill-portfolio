@@ -1,0 +1,165 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+:root {
+    --bg-color: #282C33;
+    --text-primary: #ABB2BF;
+    --text-seconday: #C778DD;
+    --white: #fff;
+
+}
+
+
+.container {
+    max-width: 1024px;
+    width: 90%;
+    margin: 0 auto;
+}
+.d-block {
+    display: block;
+}
+.d-inline {
+    display: inline;
+}
+.d-inline-block {
+    display: inline-block;
+}
+
+/* flex */
+.d-flex {
+    display: flex;
+}
+.justify-between {
+    justify-content: space-between;
+}
+.justify-center {
+    justify-content: center;
+}
+.align-center {
+    align-items: center;
+}
+
+/* colors */
+.c-primary {
+    color: var(--text-primary);
+}
+.c-secondary {
+    color: var(--text-seconday);
+}
+
+.active-link {
+    font-weight: bold;
+    color: var(--white) !important;
+}
+
+.my-btn {
+    border: 1px solid var(--text-seconday);
+    background-color: transparent;
+    color: var(--white);
+    padding: 8px 16px;
+    cursor: pointer;
+    transition-duration: .3s;
+    &:hover {
+        transform: scale(1.1);
+    }
+}
+
+.cube {
+    width: 16px;
+    height: 16px;
+    background-color: var(--text-seconday);
+    margin-right: 10px;
+}
+
+
+/* .fira-code-<uniquifier> {
+  font-family: "Fira Code", monospace;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+} */
+
+body {
+    font-family: "Fira Code", monospace;
+    background-color: var(--bg-color);
+}
+
+header {
+    padding-block: 32px 8px;
+    & .logo {
+        gap: 8px;
+        & .logo-illustration {
+
+        }
+        & .author-name {
+            color: var(--white);
+            font-weight: bold;
+        }
+    }
+    & .navigation {
+        & .nav-wrapper {
+            gap: 32px;
+            & a {
+                color: var(--text-primary);
+                display: inline-block;
+                transition-duration: .3s;
+                &:hover {
+                    transform: scale(1.1);
+                }
+                & span {
+                    &:first-child {
+                        color: var(--text-seconday);
+                    }
+                    &:last-child {
+                    }
+                }   
+            }
+        }
+    }
+}
+
+
+
+
+section.hero {
+    margin-top: 60px;
+    & .text-content {
+        color: var(--white);
+        margin-right: 18px;
+        & h1 {
+            margin-bottom: 32px;
+        }
+
+        & p {
+            margin-bottom: 24px;
+        }
+    }
+    & .img-content {
+        position: relative;
+        & img {
+
+        }
+        & .working-status {
+            width: 400px;
+            border: 1px solid var(--text-primary);
+            padding: 8px;
+            position: absolute;
+            right: 50%;
+            transform: translateX(50%);
+            bottom: -33px;
+            & .project-name {
+                color: var(--white);
+            }
+        }
+    }
+}
