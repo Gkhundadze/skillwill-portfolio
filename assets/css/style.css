@@ -12,7 +12,7 @@ a {
 }
 
 :root {
-    --bg-color: #282C33;
+    --bg-color:#282C33;
     --text-primary: #ABB2BF;
     --text-seconday: #C778DD;
     --white: #fff;
@@ -25,6 +25,11 @@ a {
     width: 90%;
     margin: 0 auto;
 }
+
+.relative {
+    position: relative;
+}
+
 .d-block {
     display: block;
 }
@@ -48,6 +53,14 @@ a {
 .align-center {
     align-items: center;
 }
+.flex-column {
+    flex-direction: column;
+}
+.align-self-end {
+    align-self: flex-end;
+}
+
+
 
 /* colors */
 .c-primary {
@@ -62,8 +75,11 @@ a {
     color: var(--white) !important;
 }
 
+.my-border {
+    border: 1px solid var(--text-primary);
+}
+
 .my-btn {
-    border: 1px solid var(--text-seconday);
     background-color: transparent;
     color: var(--white);
     padding: 8px 16px;
@@ -81,6 +97,41 @@ a {
     margin-right: 10px;
 }
 
+.square {
+    position: absolute;
+    top: 672px;
+    right: -9px;
+    width: 91px;
+    height: 91px;
+}
+.square-large {
+    position: absolute;
+    top: 1160px;
+    right: -87px;
+    width: 155px;
+    height: 155px;
+}
+
+.dots-global {
+    position: absolute;
+    top: 816px;
+    left: 9px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 11px;
+    width: 67px;
+    height: 67px;
+    & .dot {
+        width: 4px;
+        height: 4px;
+        border-radius: 50%;
+        background-color: var(--text-primary);
+    }
+}
+
+
+
 
 /* .fira-code-<uniquifier> {
   font-family: "Fira Code", monospace;
@@ -92,6 +143,29 @@ a {
 body {
     font-family: "Fira Code", monospace;
     background-color: var(--bg-color);
+    overflow-x: hidden;
+}
+
+.floating-social-links {
+    position: fixed;
+    top: 0;
+    left: 17px;
+    & .vertical-line {
+        width: 1px;
+        height: 191px;
+        background-color: var(--text-primary);
+        margin-inline: auto;
+    }
+    & .social-icons {
+        margin-top: 8px;
+        gap: 8px;
+        & a {
+
+            & img {
+
+            }
+        }
+    }
 }
 
 header {
@@ -146,19 +220,71 @@ section.hero {
     }
     & .img-content {
         position: relative;
+        & .logo {
+            position: absolute;
+            top: 84px;
+            left: -12px;
+            z-index: -1;
+        }
         & img {
 
         }
         & .working-status {
-            width: 400px;
-            border: 1px solid var(--text-primary);
-            padding: 8px;
             position: absolute;
             right: 50%;
-            transform: translateX(50%);
             bottom: -33px;
+            transform: translateX(50%);
+            z-index: 10;
+            width: 400px;
+            padding: 8px;
             & .project-name {
                 color: var(--white);
+            }
+        }
+        & .dots {
+            position: absolute;
+            right: 16px;
+            bottom: 56px;
+            z-index: 10;
+        }
+    }
+    & .developer-slogan {
+        --padding: 16px;
+        max-width: 714px;
+        margin-inline: auto;
+        margin-top: 112px;
+        color: var(--white);
+        & .slogan {
+            padding: calc(var(--padding) * 2);
+            font-weight: 500;
+            font-size: 24px;
+        }
+        & .slogan-author {
+            padding: var(--padding);
+            border-top: none;
+        }
+        & .quotes-start {
+            position: absolute;
+            left: 16px;
+            top: 0;
+            transform: translateY(-50%);
+            z-index: 1;
+            & svg {
+                & rect {
+                    fill: var(--bg-color);
+                }
+            }
+        }
+        & .quotes-end {
+            position: absolute;
+            right: 16px;
+            bottom: 0;
+            transform: translateY(50%);
+            z-index: 1;
+            & svg {
+                & rect {
+                    fill: var(--bg-color);
+                }
             }
         }
     }
