@@ -59,6 +59,9 @@ a {
 .align-self-end {
     align-self: flex-end;
 }
+.flex-wrap {
+    flex-wrap: wrap;
+}
 
 
 
@@ -231,9 +234,8 @@ section.hero {
         }
         & .working-status {
             position: absolute;
-            right: 50%;
+            left: 18px;
             bottom: -33px;
-            transform: translateX(50%);
             z-index: 10;
             width: 400px;
             padding: 8px;
@@ -284,6 +286,81 @@ section.hero {
             & svg {
                 & rect {
                     fill: var(--bg-color);
+                }
+            }
+        }
+    }
+}
+
+
+
+.projects {
+
+    
+    & .section-header {
+        color: var(--white);
+        margin-bottom: 48px;
+        & h2 {
+
+            font-size: 32px;
+            font-weight: 500;
+
+            &::before {
+                content: '#';
+                color: var(--text-seconday);
+            }
+            &::after {
+                content: '';
+                display: block;
+                width: 511px;
+                height: 1px;
+                background-color: var(--text-seconday);
+                margin-left: 16px;
+            }
+
+        }
+        & a {
+            color: inherit;
+        }
+    }
+    & .projects-wrapper {
+        gap: 16px;
+        & .card {
+            width: 330px;
+            & .card-header {
+                height: 35%;
+                & img {
+                    width: 100%;
+                    display: block;
+                }
+            }
+            & .card-body {
+                height: 65%;
+                & .technology-stack {
+                    border-left: none;
+                    border-right: none;
+                    gap: .5rem;
+                    padding: .5rem;
+                }
+                & .project-info {
+                    padding: 1rem;
+                    padding-bottom: 0;
+                    & h3 {
+                        font-size: 24px;
+                        font-weight: 500;
+                        color: var(--white);
+                        text-transform: capitalize;
+                    }
+                    & p {
+                        margin-block: 1rem;
+                        max-height: 200px;
+                        overflow-y: auto;
+                    }
+                }
+                & .buttons-wrapper {
+                    margin-top: auto;
+                    margin-left: 1rem;
+                    margin-bottom: 1rem;
                 }
             }
         }
