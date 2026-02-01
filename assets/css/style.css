@@ -19,6 +19,7 @@ a {
 
 }
 
+/* utility classes */
 
 .container {
     max-width: 1024px;
@@ -81,6 +82,26 @@ a {
 .my-border {
     border: 1px solid var(--text-primary);
 }
+
+/* ============================= */
+/* Custom Scrollbar Utility      */
+/* ============================= */
+
+.scroll-primary::-webkit-scrollbar {
+    width: 4px;
+}
+
+.scroll-primary::-webkit-scrollbar-track {
+    border-radius: 8px;
+    background-color: var(--text-primary);
+    border: 1px solid var(--text-primary);
+}
+
+.scroll-primary::-webkit-scrollbar-thumb {
+    border-radius: 8px;
+    background-color: var(--text-seconday);
+}
+
 
 .my-btn {
     background-color: transparent;
