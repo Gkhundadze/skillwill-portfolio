@@ -171,18 +171,21 @@ body {
     }
 }
 
+ & .logo {
+    gap: 8px;
+    & .logo-illustration {
+
+    }
+    & .author-name {
+        color: var(--white);
+        font-weight: bold;
+        text-transform: capitalize;
+    }
+}
+
 header {
     padding-block: 32px 8px;
-    & .logo {
-        gap: 8px;
-        & .logo-illustration {
-
-        }
-        & .author-name {
-            color: var(--white);
-            font-weight: bold;
-        }
-    }
+   
     & .navigation {
         & .nav-wrapper {
             gap: 32px;
@@ -204,8 +207,37 @@ header {
         }
     }
 }
+section {
+    margin-bottom: 100px;
+    & .section-header {
+        color: var(--white);
+        margin-bottom: 48px;
 
+        & h2 {
+            font-size: 32px;
+            font-weight: 500;
 
+            &::before {
+                content: '#';
+                color: var(--text-seconday);
+            }
+
+            &::after {
+                content: '';
+                display: block;
+                width: 511px;
+                height: 1px;
+                background-color: var(--text-seconday);
+                margin-left: 16px;
+            }
+        }
+
+        & a {
+            color: inherit;
+        }
+    }
+
+}
 
 
 section.hero {
@@ -294,35 +326,7 @@ section.hero {
 
 
 
-.projects {
-
-    
-    & .section-header {
-        color: var(--white);
-        margin-bottom: 48px;
-        & h2 {
-
-            font-size: 32px;
-            font-weight: 500;
-
-            &::before {
-                content: '#';
-                color: var(--text-seconday);
-            }
-            &::after {
-                content: '';
-                display: block;
-                width: 511px;
-                height: 1px;
-                background-color: var(--text-seconday);
-                margin-left: 16px;
-            }
-
-        }
-        & a {
-            color: inherit;
-        }
-    }
+section.projects {
     & .projects-wrapper {
         gap: 16px;
         & .card {
@@ -364,5 +368,146 @@ section.hero {
                 }
             }
         }
+    }
+}
+
+section.skills {
+
+     & h2 {
+
+            &::after {
+                width: 230px;
+            }
+        }
+    & .skills-wrapper {
+        & .shapes {
+            min-width: 350px;
+            & img {
+                display: block;
+                width: 100%;
+            }
+        }
+        .small-w {
+            width: 178px;
+        }
+        .large-w {
+            width: 196px;
+        }
+        & .skills-list {
+            max-width: 584px;
+            gap: 1rem;
+            & .skill-card {
+                margin-bottom: 1rem;
+                & .title {
+                    color: var(--white);
+                    border-bottom: 1px solid var(--text-primary);
+                    padding: 0.5rem;
+                }
+                & .body {
+                    color: var(--text-primary);
+                    padding: 0.5rem;
+                    & ul {
+                        gap: 6px;
+                    }
+                }
+            }
+            
+        }
+    }
+    
+}
+
+section.about-me {
+
+    & h2 {
+
+        &::after {
+            width: 326px;
+        }
+    }
+    & .about-me-wrapper {
+        /* gap: 32px; */
+        & .text-content {
+            color: var(--text-primary);
+            & p {
+                max-width: 515px;
+                margin-bottom: 16px;
+                line-height: 26px;
+            }
+            & button {
+                margin-top: 10px;
+                border-color: var(--text-seconday);
+            }
+        }
+    }
+}
+
+
+section.contacts {
+    & h2 {
+
+        &::after {
+            width: 280px;
+        }
+    }
+    & .contacts-wrapper {
+
+        & .text-content {
+            max-width: 505px;
+        }
+        & .contact-info {
+            padding: 1rem;
+            & h4 {
+                color: var(--white);
+                font-weight: 600;
+                margin-bottom: 1rem;
+            }
+            & ul {
+                & li {
+                    gap: 5px;
+                    margin-bottom: 8px;
+                    & img {
+
+                    }
+                    & span {
+
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+footer {
+    padding-block: 2rem;
+    color: var(--white);
+    border-top: 1px solid var(--text-primary);
+    & .logo-role-wrapper {
+        & .address {
+            margin-left: 24px;
+        }
+        & .role {
+            margin-top: 1rem;
+
+        }
+    }
+    & .social-media-wrapper  {
+        & h5 {
+            font-size: 24px;
+            text-transform: capitalize;
+            margin-bottom: 12px;
+        }
+        & a {
+            display: inline-block;
+            transition-duration: .3s;
+            &:hover {
+                transform: scale(1.1);
+            }
+        }
+    }
+    & .copy {
+        text-align: center;
+        margin-top: 3rem;
     }
 }
