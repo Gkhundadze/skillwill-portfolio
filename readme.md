@@ -1,197 +1,175 @@
- Portfolio Website (HTML & CSS)
+# Portfolio Website (HTML & CSS)
 
-This project is a personal portfolio website created using HTML and CSS.
+This project is a personal portfolio website created using **HTML** and **CSS**.
 
-It was written during a live lecture as part of the HTML / CSS module and serves as an educational example of how to build a structured, styled portfolio layout without JavaScript frameworks.
+It was written during a live lecture as part of the **HTML / CSS** module and serves as an educational example of how to build a structured, styled portfolio layout **without JavaScript frameworks**.
 
 The design is inspired by a community Figma design.
 
- Design reference:
+## Design Reference
 https://www.figma.com/design/BeZdyhczAsTFpMiKGcOQNc/Portfolio--Community-
 
- Educational Purpose
+---
 
- This project is for educational purposes.
+## Educational Purpose
+
+This project is for educational purposes.
 
 It was created during a lecture to demonstrate:
 
-semantic HTML structure
-
-layout building with Flexbox
-
-reusable utility classes
-
-CSS variables and theming
-
-component-based thinking in pure HTML/CSS
-
-translating a Figma design into real code
+- Semantic HTML structure  
+- Layout building with Flexbox  
+- Reusable utility classes  
+- CSS variables and theming  
+- Component-based thinking in pure HTML/CSS  
+- Translating a Figma design into real code  
 
 The goal is learning, not production readiness.
 
- Technologies Used
+---
 
-HTML5
+## Technologies Used
 
-CSS3
+- HTML5  
+- CSS3  
+- CSS Variables  
+- Flexbox  
+- Utility-first styling approach  
 
-CSS Variables
+---
 
-Flexbox
-
-Utility-first styling approach
-
- Design & Inspiration
+## Design & Inspiration
 
 The layout and visual direction are inspired by a community-made portfolio design on Figma.
 
 The implementation is not a pixel-perfect copy, but rather an interpretation focused on:
 
-structure
+- Structure  
+- Layout logic  
+- Reusable styles  
+- Readability for students  
 
-layout logic
+---
 
-reusable styles
+## Project Structure
 
-readability for students
+- Semantic sections (`header`, `main`, `section`, `footer`)  
+- Reusable components (cards, buttons, navigation)  
+- Utility classes for layout and spacing  
+- Decorative elements implemented with CSS  
 
- Project Structure
+---
 
-Semantic sections (header, main, section, footer)
-
-Reusable components (cards, buttons, navigation)
-
-Utility classes for layout and spacing
-
-Decorative elements implemented with CSS
-
- Lecture Context
+## Lecture Context
 
 This project was built:
 
-live during a lecture
-
-in the HTML / CSS module
-
-as a walkthrough from design → code
-
-with explanations for every major decision
+- Live during a lecture  
+- In the HTML / CSS module  
+- As a walkthrough from design → code  
+- With explanations for every major decision  
 
 Students are encouraged to:
 
-customize content
+- Customize content  
+- Adjust colors  
+- Improve responsiveness  
+- Extend the layout with their own sections  
 
-adjust colors
+---
 
-improve responsiveness
+## Notes
 
-extend the layout with their own sections
+- This is a static project  
+- No JavaScript is required  
+- Some modern CSS features are used  
+- Browser support depends on feature availability  
 
- Notes
+---
 
-This is a static project
+# პორტფოლიოს ვებსაიტი (HTML & CSS)
 
-No JavaScript is required
+ეს პროექტი არის პირადი პორტფოლიოს ვებსაიტი, შექმნილი **HTML-ისა და CSS-ის** გამოყენებით.
 
-Some modern CSS features are used
-
-Browser support depends on feature availability
-
- პორტფოლიოს ვებსაიტი (HTML & CSS)
-
-ეს პროექტი არის პირადი პორტფოლიოს ვებსაიტი, შექმნილი HTML-ისა და CSS-ის გამოყენებით.
-
-პროექტი დაიწერა ლექციის მიმდინარეობისას, HTML / CSS მოდულის ფარგლებში და წარმოადგენს სასწავლო მაგალითს, თუ როგორ შეიძლება პორტფოლიოს აწყობა JavaScript framework-ების გარეშე.
+პროექტი დაიწერა ლექციის მიმდინარეობისას, **HTML / CSS მოდულის** ფარგლებში და წარმოადგენს სასწავლო მაგალითს, თუ როგორ შეიძლება პორტფოლიოს აწყობა **JavaScript framework-ების გარეშე**.
 
 დიზაინი ინსპირირებულია Figma-ს community დიზაინით.
 
- დიზაინის წყარო:
+## დიზაინის წყარო
 https://www.figma.com/design/BeZdyhczAsTFpMiKGcOQNc/Portfolio--Community-
 
- სასწავლო დანიშნულება
+---
 
- პროექტი შექმნილია სასწავლო მიზნებისთვის.
+## სასწავლო დანიშნულება
+
+პროექტი შექმნილია სასწავლო მიზნებისთვის.
 
 მისი მიზანია სტუდენტებმა ისწავლონ:
 
-სემანტიკური HTML სტრუქტურა
-
-Flexbox-ით layout-ის აგება
-
-utility კლასების გამოყენება
-
-CSS ცვლადები და თემინგი
-
-კომპონენტური აზროვნება სუფთა HTML/CSS-ში
-
-Figma დიზაინის რეალურ კოდად გადაყვანა
+- სემანტიკური HTML სტრუქტურა  
+- Flexbox-ით layout-ის აგება  
+- Utility კლასების გამოყენება  
+- CSS ცვლადები და თემინგი  
+- კომპონენტური აზროვნება სუფთა HTML/CSS-ში  
+- Figma დიზაინის რეალურ კოდად გადაყვანა  
 
 პროექტი არ არის გათვლილი production გამოყენებაზე.
 
- გამოყენებული ტექნოლოგიები
+---
 
-HTML5
+## გამოყენებული ტექნოლოგიები
 
-CSS3
+- HTML5  
+- CSS3  
+- CSS Variables  
+- Flexbox  
+- Utility-first სტილის მიდგომა  
 
-CSS Variables
+---
 
-Flexbox
-
-Utility-first სტილის მიდგომა
-
- დიზაინი და ინსპირაცია
+## დიზაინი და ინსპირაცია
 
 ვებსაიტის ვიზუალური მხარე ინსპირირებულია Figma-ს community პორტფოლიო დიზაინით.
 
 იმპლემენტაცია არ არის ზუსტი კოპირება, არამედ ადაპტირებული ვერსია, რომელიც ორიენტირებულია:
 
-სტრუქტურაზე
+- სტრუქტურაზე  
+- Layout ლოგიკაზე  
+- ხელახლა გამოყენებად სტილებზე  
+- სტუდენტებისთვის გასაგებ კოდზე  
 
-layout ლოგიკაზე
+---
 
-ხელახლა გამოყენებად სტილებზე
+## პროექტის სტრუქტურა
 
-სტუდენტებისთვის გასაგებ კოდზე
+- სემანტიკური სექციები (`header`, `main`, `section`, `footer`)  
+- განმეორებადი კომპონენტები (ბარათები, ღილაკები, ნავიგაცია)  
+- Utility კლასები layout-ისთვის და დაშორებებისთვის  
+- დეკორატიული ელემენტები CSS-ის საშუალებით  
 
- პროექტის სტრუქტურა
+---
 
-სემანტიკური სექციები (header, main, section, footer)
-
-განმეორებადი კომპონენტები (ბარათები, ღილაკები, ნავიგაცია)
-
-utility კლასები layout-ისთვის და დაშორებებისთვის
-
-დეკორატიული ელემენტები CSS-ის საშუალებით
-
- ლექციის კონტექსტი
+## ლექციის კონტექსტი
 
 პროექტი შეიქმნა:
 
-ლექციის მიმდინარეობისას
-
-HTML / CSS მოდულის ფარგლებში
-
-დიზაინიდან → კოდამდე პროცესის საჩვენებლად
-
-ყველა მნიშვნელოვან ნაბიჯზე ახსნა-განმარტებით
+- ლექციის მიმდინარეობისას  
+- HTML / CSS მოდულის ფარგლებში  
+- დიზაინიდან → კოდამდე პროცესის საჩვენებლად  
+- ყველა მნიშვნელოვან ნაბიჯზე ახსნა-განმარტებით  
 
 სტუდენტებს ეძლევათ რეკომენდაცია:
 
-შეცვალონ კონტენტი
+- შეცვალონ კონტენტი  
+- დაარეგულირონ ფერები  
+- გააუმჯობესონ responsive ქცევა  
+- დაამატონ საკუთარი სექციები  
 
-დაარეგულირონ ფერები
+---
 
-გააუმჯობესონ responsive ქცევა
+## შენიშვნები
 
-დაამატონ საკუთარი სექციები
-
- შენიშვნები
-
-პროექტი არის სტატიკური
-
-JavaScript არ გამოიყენება
-
-გამოყენებულია თანამედროვე CSS შესაძლებლობები
-
-ბრაუზერის მხარდაჭერა დამოკიდებულია კონკრეტულ ფუნქციებზე
+- პროექტი არის სტატიკური  
+- JavaScript არ გამოიყენება  
+- გამოყენებულია თანამედროვე CSS შესაძლებლობები  
+- ბრაუზერის მხარდაჭერა დამოკიდებულია კონკრეტულ ფუნქციებზე  
