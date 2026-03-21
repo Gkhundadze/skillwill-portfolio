@@ -373,7 +373,6 @@ section.skills {
     }
     
 }
-
 section.about-me {
     & h2 {
         &::after {
@@ -381,7 +380,6 @@ section.about-me {
         }
     }
     & .about-me-wrapper {
-        /* gap: 32px; */
         & .text-content {
             color: var(--text-primary);
             & p {
